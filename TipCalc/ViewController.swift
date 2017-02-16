@@ -65,6 +65,8 @@ class ViewController: UIViewController {
             tipCustomLabel.text = " "
             totalCustomLabel.text = " "
         }
+        
+        
     }
     }
 
