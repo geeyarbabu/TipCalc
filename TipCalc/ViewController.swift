@@ -66,11 +66,30 @@ class ViewController: UIViewController {
             totalCustomLabel.text = " "
         }
         
-        
+       
+
+        switch  customTipPercentageSlider.value {
+        case 18...18.9:
+            self.view.backgroundColor = UIColor.white
+            break
+        case 19 ... 25.9:
+            self.view.backgroundColor = UIColor.brown
+            break
+               case 26 ... 30:
+            self.view.backgroundColor = UIColor.green
+            break
+        case 0...10.9:
+            self.view.backgroundColor = UIColor.cyan
+            break
+        case 11...17.9:
+            self.view.backgroundColor = UIColor.darkGray
+            break
+
+        default:
+            self.view.backgroundColor = UIColor.gray
+        }
     }
     }
-
-
 
 
 extension NSNumber
